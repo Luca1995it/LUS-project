@@ -1,2 +1,2 @@
-# LUS-project
-Project of the Language Understanding System Course
+# Natural-Language-Understanding-Project
+Project of the Natural Language Understanding Course
