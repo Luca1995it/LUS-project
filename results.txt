@@ -1,5 +1,4 @@
-BASIC results for different ngram methods
-
+basic:
 witten_bell 4   81.42
 witten_bell 1   56.22
 witten_bell 2   79.31
@@ -17,3 +16,20 @@ presmoothed 4
 unsmoothed  2
 unsmoothed  3
 unsmoothed  4
+
+with the use of pos-tag:
+witten_bell 2   75.22   100
+witten_bell 3   77.75   461
+katz        2   74.50   100
+katz        3   76.06   1360
+kneser_ney  2   75.22   102
+kneser_ney  3   77.72   550
+presmoothed 2   74.78   98
+presmoothed 3   77.02   430
+unsmoothed  2   74.13   97
+unsmoothed  3   75.64   555
+
+with the use of lemma:
+witten_bell 3
+katz        2
+katz        3
