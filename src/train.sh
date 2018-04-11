@@ -19,11 +19,11 @@ fi
 
 ##### Create basic input file - token,tokenstd,pos-tag,concept-tag
 
-# token,tokenstd,pos-tag,concept-tag
+# token,lemma,pos-tag,concept-tag
 ./prepare_file.py $1 $2 > input.txt
 
-cat input.txt | cut -f 3,4 > last.txt
-# pos-tag, concept-tag
+cat input.txt | cut -f 2,4 > last.txt
+# lemma, concept-tag
 cat input.txt | cut -f 1 > first.txt
 # token
 
