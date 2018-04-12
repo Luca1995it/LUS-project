@@ -36,11 +36,11 @@ with the use of lemma:
 witten_bell 2   78.93   372
 witten_bell 3   81.94   2016
 witten_bell 4   81.70   3841
+absolute    2   78.87   503
+absolute    3   82.08   1749
 katz        2   79.13   382
 katz        3   81.66   4072
 katz        4   81.80   6137
-absolute    2   78.87   503
-absolute    3   82.08   1749
 kneser_ney  2   79.63   516
 kneser_ney  3   82.36   1753
 presmoothed 2   77.45   355
