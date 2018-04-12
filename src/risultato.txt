@@ -1,0 +1,2 @@
+N-gram: 2 -- N-method: witten_bell
+accuracy:  93.72%; precision:  78.35%; recall:  80.29%; FB1:  79.31

@@ -3,7 +3,8 @@
 
 ./train.sh data/NLSPARQL.train.data out.fst $1 $2
 ./test.sh data/NLSPARQL.test.data out.fst lex.syms temp.txt
-echo "N-gram: $1 -- N-method: $2" > tmp.txt
+echo "N-gram: $1 -- N-method: $2" > risultato.txt
 cat temp.txt | ./conlleval.pl -d "\t" | grep "accuracy:" >> risultato.txt
 
-rm out.fst lex.syms risultato.txt
+rm out.fst lex.syms
+cat risultato.txt
