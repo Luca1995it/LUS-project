@@ -54,8 +54,10 @@ farcompilestrings --symbols=lex.syms --unknown_symbol='<unk>' \
 	tmp_parsed.data > data.far
 ngramcount --order=$n_gram_len --require_symbols=false data.far > pos.cnt
 ngrammake --method=$n_gram_method pos.cnt | fstrmepsilon |\
-	fstdeterminize | fstminimize > concepts.fst
+	fstdeterminize  > concepts.fst
 rm tmp_parsed.data pos.cnt data.far final.txt
+
+
 
 ## Combining P(w|m)*P(m|m-1)
 fstcompose automa.fst concepts.fst | fstrmepsilon > $3

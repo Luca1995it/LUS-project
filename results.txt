@@ -1,8 +1,9 @@
+O 3/4 del totale
+
 basic:
-witten_bell 4   81.42
-witten_bell 1   56.22
 witten_bell 2   79.31
 witten_bell 3   81.33
+witten_bell 4   81.42
 absolute    2   78.93
 absolute    3   81.37
 absolute    4
@@ -22,6 +23,8 @@ witten_bell 2   75.22   100
 witten_bell 3   77.75   461
 katz        2   74.50   100
 katz        3   76.06   1360
+absolute    2
+absolute    3
 kneser_ney  2   75.22   102
 kneser_ney  3   77.72   550
 presmoothed 2   74.78   98
@@ -30,6 +33,17 @@ unsmoothed  2   74.13   97
 unsmoothed  3   75.64   555
 
 with the use of lemma:
-witten_bell 3
-katz        2
-katz        3
+witten_bell 2   78.93   372
+witten_bell 3   81.94   2016
+witten_bell 4   81.70   3841
+katz        2   79.13   382
+katz        3   81.66   4072
+katz        4   81.80   6137
+absolute    2   78.87   503
+absolute    3   82.08   1749
+kneser_ney  2   79.63   516
+kneser_ney  3   82.36   1753
+presmoothed 2   77.45   355
+presmoothed 3   80.64   2165
+unsmoothed  2   76.81   495
+unsmoothed  3   78.98   4812

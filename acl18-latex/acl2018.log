@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.18)  10 APR 2018 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.18)  11 APR 2018 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -196,26 +196,26 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 ) (./acl2018.aux)
 \openout1 = `acl2018.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 40.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring ON on input line 41.
+Package hyperref Info: Link coloring ON on input line 40.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -225,9 +225,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count104
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 
 (./acl2018.out) (./acl2018.out)
 \@outlinefile=\write3
@@ -249,219 +249,218 @@ LaTeX Info: Redefining \nameref on input line 41.
 \everyMPtoPDFconversion=\toks16
 ) ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 42.
+(Font)              <12> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 42.
+(Font)              <8> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 42.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 42.
+(Font)              <6> on input line 41.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 41.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 41.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+Underfull \hbox (badness 1178) in paragraph at lines 53--57
+\OT1/ptm/m/n/10.95 by pro-fes-sor Giuseppe Ric-cardi and pro-fes-sor
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
-
-
-Package natbib Warning: Citation `Gusfield:97' on page 1 undefined on input lin
-e 44.
-
-
-Package natbib Warning: Citation `Aho:72' on page 1 undefined on input line 44.
-
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 109--115
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 99.
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--126
 \OT1/ptm/m/n/10.95 ACL pro-vides this de-scrip-tion in L[]T[]X2e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--115
+Underfull \hbox (badness 10000) in paragraph at lines 120--126
 \OT1/ptm/m/n/10.95 (\OT1/pcr/m/n/9 acl[]natbib.bst\OT1/ptm/m/n/10.95 ) and ex-a
 m-ple bib-li-og-ra-phy
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 109--115
+Underfull \hbox (badness 1371) in paragraph at lines 120--126
 \OT1/ptm/m/n/10.95 (\OT1/pcr/m/n/9 acl2018.bib\OT1/ptm/m/n/10.95 ). These files
  are all avail-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--115
+Underfull \hbox (badness 10000) in paragraph at lines 120--126
 \OT1/ptm/m/n/10.95 at [][]$\OT1/pcr/m/n/10.95 http : / / acl2018 . org / downlo
 ads /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--121
+Underfull \hbox (badness 10000) in paragraph at lines 127--132
 []\OT1/ptm/m/n/10.95 A Mi-crosoft Word tem-plate file
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--121
+Underfull \hbox (badness 10000) in paragraph at lines 127--132
 \OT1/ptm/m/n/10.95 (\OT1/pcr/m/n/9 acl18-word.docx\OT1/ptm/m/n/10.95 ) and ex-a
 m-ple sub-mis-
  []
 
 
-Underfull \hbox (badness 8000) in paragraph at lines 116--121
+Underfull \hbox (badness 8000) in paragraph at lines 127--132
 \OT1/ptm/m/n/10.95 sion pdf (\OT1/pcr/m/n/9 acl18-word.pdf\OT1/ptm/m/n/10.95 ) 
 is avail-able at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--121
+Underfull \hbox (badness 10000) in paragraph at lines 127--132
 [][]$\OT1/pcr/m/n/10.95 http : / / acl2018 . org / downloads /
  []
 
 
-Underfull \hbox (badness 6944) in paragraph at lines 116--121
+Underfull \hbox (badness 6944) in paragraph at lines 127--132
 \OT1/pcr/m/n/10.95 acl18-[]word . zip$[][]\OT1/ptm/m/n/10.95 . We strongly rec-
 om-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--152
+Underfull \hbox (badness 10000) in paragraph at lines 157--163
 [][]\OT1/pcr/m/n/10.95 \special{papersize=210mm,297mm}
  []
 
 
-Underfull \hbox (badness 7685) in paragraph at lines 146--152
+Underfull \hbox (badness 7685) in paragraph at lines 157--163
 []\OT1/ptm/m/n/10.95 in the la-tex pream-ble (di-rectly be-low the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--152
+Underfull \hbox (badness 10000) in paragraph at lines 157--163
 [][]\OT1/pcr/m/n/10.95 \usepackage []\OT1/ptm/m/n/10.95 com-mands). Then us-ing
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 166.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 177.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 266.
+(Font)              <9> on input line 277.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 266.
+(Font)              <5> on input line 277.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 269.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 280.
+
+Underfull \vbox (badness 7291) has occurred while \output is active []
+
+ [3]
+
+Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
+e 317.
 
 
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 306.
+Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
+e 318.
 
 
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 307.
-
-
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 308.
-
-
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
+Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
 e 319.
 
 
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 320.
+Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
+e 330.
 
 
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 323.
+Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
+e 331.
 
 
-Package natbib Warning: Citation `Aho:72' on page 3 undefined on input line 323
+Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
+e 334.
+
+
+Package natbib Warning: Citation `Aho:72' on page 4 undefined on input line 334
 .
 
 
-Package natbib Warning: Citation `Aho:72' on page 3 undefined on input line 326
+Package natbib Warning: Citation `Aho:72' on page 4 undefined on input line 337
 .
 
 
-Package natbib Warning: Citation `Chandra:81' on page 3 undefined on input line
- 326.
-
-[3]
-
-Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
-e 336.
+Package natbib Warning: Citation `Chandra:81' on page 4 undefined on input line
+ 337.
 
 
 Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
-e 340.
+e 347.
 
 
 Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
-e 349.
+e 351.
+
+
+Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
+e 360.
 
 
 Package natbib Warning: Citation `P16-1001' on page 4 undefined on input line 3
-77.
+88.
 
 
 Package natbib Warning: Citation `C14-1001' on page 4 undefined on input line 3
-78.
+89.
 
 
 Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
-e 386.
+e 397.
 
 
 Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
-e 390.
+e 401.
 
 
 Package natbib Warning: Citation `Gusfield:97' on page 4 undefined on input lin
-e 390.
+e 401.
 
 
-Package natbib Warning: Citation `APA:83' on page 4 undefined on input line 405
+Package natbib Warning: Citation `APA:83' on page 4 undefined on input line 416
 .
 
 
-Package natbib Warning: Citation `ACM:83' on page 4 undefined on input line 407
+Package natbib Warning: Citation `ACM:83' on page 4 undefined on input line 418
 .
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 409--412
+Underfull \hbox (badness 1152) in paragraph at lines 420--423
 []\OT1/ptm/m/n/10.95 The L[]T[]X and BibT[]X style files pro-vided
  []
 
 [4]
-Underfull \hbox (badness 2512) in paragraph at lines 449--450
+Underfull \hbox (badness 2512) in paragraph at lines 460--461
 []\OT1/ptm/m/n/10.95 The num-ber-ing (if any) and align-ment of
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 513--519
+Underfull \hbox (badness 2285) in paragraph at lines 524--530
 []\OT1/ptm/m/n/10.95 However, note that sup-ple-men-tary ma-te-rial
  []
 
-No file acl2018.bbl.
 [5]
-Underfull \hbox (badness 2181) in paragraph at lines 559--563
+No file acl2018.bbl.
+
+Underfull \hbox (badness 2181) in paragraph at lines 570--574
 [][]\OT1/pcr/m/n/10.95 \appendix []\OT1/ptm/m/n/10.95 be-fore any ap-pendix sec
 -tion to
  []
@@ -469,17 +468,17 @@ Underfull \hbox (badness 2181) in paragraph at lines 559--563
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 568.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
 [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 568.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
  (./acl2018.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 568.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 568.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 579.
 Package rerunfilecheck Info: File `acl2018.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 568.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 579.
  )
 (\end occurred when \iffalse on line 349 was incomplete) 
 Here is how much of TeX's memory you used:
@@ -489,7 +488,7 @@ Here is how much of TeX's memory you used:
  9330 multiletter control sequences out of 15000+600000
  29280 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,18n,37p,375b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,18n,37p,375b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 7/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fon
@@ -499,7 +498,7 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
 e1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on acl2018.pdf (6 pages, 118799 bytes).
+Output written on acl2018.pdf (6 pages, 118296 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  95 compressed objects within 1 object stream

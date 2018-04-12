@@ -11,5 +11,5 @@ cat temp.txt | ./conlleval.pl -d "\t" | grep "accuracy:" >> risultato.txt
 rm out.fst lex.syms temp.txt
 
 end=$(date +%s)
-echo "Total time: $(expr $end - $begin) seconds"
+echo "Total time: $(expr $end - $begin) seconds" >> risultato.txt
 cat risultato.txt
