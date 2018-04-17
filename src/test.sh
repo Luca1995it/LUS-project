@@ -28,8 +28,8 @@ while read line; do
 	echo $line | farcompilestrings --symbols=$3 --generate_keys=1 \
 		--unknown_symbol='<unk>' | farextract --filename_suffix='.fsa'
 
-	fstcompose 1.fsa $2 | fstproject --project_output | fstrmepsilon |\
-		fstshortestpath | fsttopsort | fstprint --isymbols=$3 --osymbols=$3 |\
+	fstcompose 1.fsa $2 | fstproject --project_output | fstshortestpath |\
+		fstrmepsilon | fsttopsort | fstprint --isymbols=$3 --osymbols=$3 |\
 		cut -f 3 -s >> tmp.txt
 
 	echo -ne "\n" >> tmp.txt
