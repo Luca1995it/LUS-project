@@ -1,18 +1,21 @@
 #!/bin/bash
 
 # $1 file to test data
-# $2 trained fst
-# $3 symbols file
-# $4 output file
+# $2 file to test feats
+# $3 trained fst
+# $4 symbols file
+# $5 output file
 
 # token,concept-tag
 
 ## Extracting real result and removing them from real input
 cat $1 | cut -f 2 > real_results.txt
 
-cat $1 | cut -f 1 | sed "s/^ *$/#/g" | tr '\n' ' ' | tr '#' '\n' |\
+cat $1 | cut -f 1 > token_vertical.txt
+cat token_vertical.txt | sed "s/^ *$/#/g" | tr '\n' ' ' | tr '#' '\n' |\
 	sed "s/^ *//g;s/* $//g" > token.txt
 
+cat $2 | cut -f 2 > postags.txt
 ## Only to print advancement
 numfiles=$(cat token.txt | wc -l)
 count=1
@@ -25,11 +28,12 @@ fi
 
 while read line; do
 
-	echo $line | farcompilestrings --symbols=$3 --generate_keys=1 \
-		--unknown_symbol='<unk>' | farextract --filename_suffix='.fsa'
+	echo $line | farcompilestrings --symbols=$4 --generate_keys=1 \
+		--unknown_symbol='<unk>' --keep_symbols |\
+		farextract --filename_suffix='.fst'
 
-	fstcompose 1.fsa $2 | fstproject --project_output | fstrmepsilon |\
-		fstshortestpath | fsttopsort | fstprint --isymbols=$3 --osymbols=$3 |\
+	fstcompose 1.fst $3 | fstshortestpath | fstrmepsilon | fsttopsort |\
+		fstproject --project_output | fstprint --isymbols=$4 --osymbols=$4 |\
 		cut -f 3 -s >> tmp.txt
 
 	echo -ne "\n" >> tmp.txt
@@ -45,7 +49,7 @@ echo -e "\nDone!"
 cat -s tmp.txt > __output.txt
 ./O_parser.py __output.txt -rev > output.txt
 
-paste -d"\t" real_results.txt output.txt > $4
+paste -d"\t" token_vertical.txt postags.txt real_results.txt output.txt > $5
 
-rm real_results.txt token.txt
-rm 1.fsa tmp.txt __output.txt output.txt
+rm real_results.txt token.txt token_vertical.txt
+rm 1.fst tmp.txt __output.txt output.txt postags.txt

@@ -3,10 +3,13 @@
 # $1 training file.data
 # $2 training file.feats
 # $3 output fst
+# $4 n-gram len
+# $5 n-gram method
 
-# this script will create an fst called final.fst (and the lex.syms file)
 
-n_gram_len=3
+# this script will create an fst called final.fst and the lex.syms file
+
+n_gram_len=2
 n_gram_method=witten_bell
 
 if [ ! -z $4 ]; then
@@ -53,12 +56,11 @@ cat final.txt | cut -f 2 | sed "s/^ *$/#/g" | tr '\n' ' ' |\
 farcompilestrings --symbols=lex.syms --unknown_symbol='<unk>' \
 	tmp_parsed.data > data.far
 ngramcount --order=$n_gram_len --require_symbols=false data.far > pos.cnt
-ngrammake --method=$n_gram_method pos.cnt | fstrmepsilon |\
-	fstdeterminize | fstminimize > concepts.fst
+ngrammake --method=$n_gram_method pos.cnt > concepts.fst
 rm tmp_parsed.data pos.cnt data.far final.txt
 
 
 
 ## Combining P(w|m)*P(m|m-1)
-fstcompose automa.fst concepts.fst | fstrmepsilon > $3
+fstcompose automa.fst concepts.fst > $3
 rm concepts.fst automa.fst
