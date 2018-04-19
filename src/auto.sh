@@ -14,4 +14,4 @@ end=$(date +%s)
 
 echo "$2;$1;$(expr $end - $begin);$(cat temp.txt | ./conlleval.pl -d '\t' | grep accuracy:)" >> $3
 
-rm out.fst lex.syms
+rm out.fst lex.syms temp.txt

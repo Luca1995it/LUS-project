@@ -2,7 +2,7 @@
 # $1 result file
 
 declare -a arr=("witten_bell" "absolute" "katz" "kneser_ney" "presmoothed" "unsmoothed")
-declare -a arr2=("2" "3" "4")
+declare -a arr2=("5")
 
 if [ -f $1 ]; then
 	rm $1
