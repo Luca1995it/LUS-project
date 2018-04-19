@@ -1,19 +1,22 @@
 #!/bin/bash
 
-# $1 training file.data
-# $2 output fst
+# $1 training data file
+# $2 training feats file
+# $3 output fst
+# $4 n-gram len (optional)
+# $5 n-gram method (optional)
 
 # this script will create an fst called final.fst (and the lex.syms file)
 
 n_gram_len=2
 n_gram_method=witten_bell
 
-if [ ! -z $3 ]; then
-	n_gram_len=$3
+if [ ! -z $4 ]; then
+	n_gram_len=$4
 fi
 
-if [ ! -z $4 ]; then
-	n_gram_method=$4
+if [ ! -z $5 ]; then
+	n_gram_method=$5
 fi
 
 ##### Create basic input file - token,tokenstd,pos-tag,concept-tag
@@ -41,7 +44,7 @@ ngramcount --order=$n_gram_len --require_symbols=false data.far > pos.cnt
 ngrammake --method=$n_gram_method pos.cnt > concepts.fst
 
 ## Combining P(w|m)*P(m|m-1)
-fstcompose automa.fst concepts.fst > $2
+fstcompose automa.fst concepts.fst > $3
 
 # Cleaning
 rm res.txt automa.txt tmp.fst
