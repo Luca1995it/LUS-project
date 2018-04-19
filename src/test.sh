@@ -8,7 +8,7 @@
 
 # token,concept-tag
 
-## Extracting real result and removing them from real input
+## Extracting real results and removing them from real input
 cat $1 | cut -f 2 > real_results.txt
 
 cat $1 | cut -f 1 > token_vertical.txt
