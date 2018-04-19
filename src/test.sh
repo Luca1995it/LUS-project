@@ -25,11 +25,12 @@ fi
 
 while read line; do
 
-	echo $line | farcompilestrings --symbols=$3 --generate_keys=1 \
-		--unknown_symbol='<unk>' | farextract --filename_suffix='.fst'
+	echo $line | farcompilestrings --symbols=$4 --generate_keys=1 \
+		--unknown_symbol='<unk>' --keep_symbols |\
+		farextract --filename_suffix='.fst'
 
-	fstcompose 1.fst $2 | fstshortestpath | fstrmepsilon |\
-		fsttopsort | fstproject --project_output | fstprint --isymbols=$3 --osymbols=$3 |\
+	fstcompose 1.fst $3 | fstshortestpath | fstrmepsilon | fsttopsort |\
+		fstproject --project_output | fstprint --isymbols=$4 --osymbols=$4 |\
 		cut -f 3 -s >> tmp.txt
 
 	echo -ne "\n" >> tmp.txt
@@ -37,7 +38,6 @@ while read line; do
 	let adv=count*100/numfiles
 	echo -ne "\rAdvancement: ${adv}%"
 	let count=count+1
-	rm 1.fst
 
 done < token.txt
 
