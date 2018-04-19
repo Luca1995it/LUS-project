@@ -1,5 +1,5 @@
 #!/bin/bash
-# Train and test with a given model distribution pf P(concept | concept-1)
+# Train and test with a specific model distribution of P(concept | concept-1)
 
 # $1 n_gram_len
 # $2 n_gram_method
