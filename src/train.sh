@@ -23,7 +23,8 @@ fi
 
 # Create general input file
 
-./O_parser.py $1 > res.txt
+#./O_parser.py $1 > res.txt
+cat $1 > res.txt
 
 # Create symbols table
 ./createsymboltable.sh res.txt lex.syms

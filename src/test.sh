@@ -48,7 +48,8 @@ done < token.txt
 echo -e "\nDone!"
 
 cat -s tmp.txt > __output.txt
-./O_parser.py __output.txt -rev > output.txt
+#./O_parser.py __output.txt -rev > output.txt
+cat __output.txt > output.txt
 
 paste -d"\t" token_vertical.txt postags.txt real_results.txt output.txt > $5
 
