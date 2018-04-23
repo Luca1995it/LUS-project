@@ -3,12 +3,12 @@
 
 # INPUT
 # File data: token, concept
-# File feats: token, pos-tag, tokenstd
+# File feats: token, pos-tag, lemma
 
 # OUTPUT
-# token, tokenstd, pos-tag, obi
+# token, lemma, pos-tag, obi
 
-# Basically it joins the two files on the token line per line
+# It joins the two files on the token line per line
 
 import sys
 import numpy as np
@@ -43,9 +43,9 @@ for i in range(len(data)):
 		token = line1[0]
 		obi = line1[1]
 		pos = line2[1]
-		tokenstd = line2[2]
+		lemma = line2[2]
 
-		print("%s\t%s\t%s\t%s" % (token,tokenstd,pos,obi))
+		print("%s\t%s\t%s\t%s" % (token,lemma,pos,obi))
 
 
 data_file.close()

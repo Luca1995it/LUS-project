@@ -6,9 +6,7 @@
 # $4 symbols file
 # $5 output file
 
-# token,concept-tag
-
-## Extracting real results and removing them from real input
+## Extracting real results for later comparison
 cat $1 | cut -f 2 > real_results.txt
 
 cat $1 | cut -f 1 > token_vertical.txt
@@ -20,7 +18,7 @@ cat $2 | cut -f 2 > postags.txt
 numfiles=$(cat token.txt | wc -l)
 count=1
 
-echo "Number of lines to test: $numfiles"
+echo "Number of sentences to test: $numfiles"
 
 if [ -f tmp.txt ]; then
 	rm tmp.txt
@@ -47,6 +45,7 @@ done < token.txt
 echo -e "\nDone!"
 
 cat -s tmp.txt > __output.txt
+# substitute tokens with Os
 ./O_parser.py __output.txt -rev > output.txt
 
 paste -d"\t" token_vertical.txt postags.txt real_results.txt output.txt > $5

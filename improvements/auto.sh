@@ -12,8 +12,6 @@ begin=$(date +%s)
 
 end=$(date +%s)
 
-cat temp.txt > $3
-
-#echo "$2;$1;$(expr $end - $begin);$(cat temp.txt | ./conlleval.pl -d '\t' | grep accuracy:)" >> $3
+echo "$2;$1;$(expr $end - $begin);$(cat temp.txt | ./conlleval.pl -d '\t' | grep accuracy:)" >> $3
 
 rm out.fst lex.syms temp.txt
