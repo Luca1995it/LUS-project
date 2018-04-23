@@ -9,11 +9,13 @@ The improvements folder contains code example for the second algorithm described
 ## Launch a single test
 	./auto.sh <distribution> <n-gram-order> <output_file>
 
-Example ./auto.sh witten_bell 3 res.txt
+Example
+	./auto.sh witten_bell 3 res.txt
 
 ## Launch all possibile tests
 	./alltest.sh <output_file>
 
-Example ./alltest.sh res.txt
+Example
+	./alltest.sh res.txt
 
 For different/special applications, take a look at the train.sh and test.sh files.
