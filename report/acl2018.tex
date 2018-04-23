@@ -7,7 +7,7 @@
 %% Based on the style files for ACL-2014, which were, in turn,
 %% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
 %% EACL-2009, IJCNLP-2008...
-%% Based on the style files for EACL 2006 by 
+%% Based on the style files for EACL 2006 by
 %%e.agirre@ehu.es or Sergi.Balari@uab.es
 %% and that of ACL 08 by Joakim Nivre and Noah Smith
 
@@ -34,7 +34,7 @@
 
 \author{Luca Di Liello \\
 	University of Trento\\
-    {\tt luca.diliello@studenti.unitn.it }  
+	{\tt luca.diliello@studenti.unitn.it }
 }
 
 
@@ -85,7 +85,7 @@ It's interesting to see that half of the concepts appear only few times while th
   \includegraphics[scale=0.33]{length.png}
   \caption{Concept and sentence length}
 \end{figure}
-As you can see, the large majority of the concepts are short, composed by one or two words. There are very rare case where the length can reach 9 but the average is of 1.88 words. The length of the sentences is better distributed, with an average value of 6.42 words and some rare peaks over 15 words. Finally, some data about the size of the training and the test sets: the training set contains 3338 sentence while the test set has only 1083 sentences. This means that the ratio between training and test dimensions is about 3. The distribution of the length of sentences and concepts in the test dataset is very similar to that of the training dataset, taking in account that the total number of test sentences is reduced by 3 times. 
+As you can see, the large majority of the concepts are short, composed by one or two words. There are very rare case where the length can reach 9 but the average is of 1.88 words. The length of the sentences is better distributed, with an average value of 6.42 words and some rare peaks over 15 words. Finally, some data about the size of the training and the test sets: the training set contains 3338 sentence while the test set has only 1083 sentences. This means that the ratio between training and test dimensions is about 3. The distribution of the length of sentences and concepts in the test dataset is very similar to that of the training dataset, taking in account that the total number of test sentences is reduced by 3 times.
 
 \section{The main idea}
 
@@ -104,7 +104,7 @@ Cost \big( token | concept\_tag \big) = \\
 The second FST will encode the probability of a specific concept given the previous $n$ ones.
 \begin{multline}
 P \big( concept\_tag_n | \\
- concept\_tag_{n-1}, concept\_tag_{n-2}, ... \big) 
+ concept\_tag_{n-1}, concept\_tag_{n-2}, ... \big)
 \end{multline}
 This FST, that is truly an FSA, will be created with the help of the OpenGRM library. As described in the their documentation, the available probability distributions to build the n-gram model are: witten-bell, absolute, katz, kneser-ney, presmoothed, unsmoothed. In the test section there will be results of different tests with each of this distributions. Moreover, there is the possibility to choose the deepness of the dependency of a concept tag with respect to the ones that precede. The more the number of previous concept tags on which compute the probability of the current tag, the higher the size of the equivalent FST.
 
@@ -124,7 +124,7 @@ There is a simple way to improve our algorithm to perform better, that is to do 
 \end{figure*}
 
 
-The graph in Fig. 3 shows the results of the base algorithm with all the different probability distributions and with and n-gram length going from 2 to 5. First some comments about the F1-score: the better tuples $(probability\ distribution, n-gram\ order)$ are the $(witten\_bell,2)$ and $(absolute,2)$. They reached an maximum F1-score of 76.37 in our test. Notice that all different combinations, apart from some particular cases, performs very similar and the variance of the results is very low. The average F1-score is of 74.25 points. In this tests, the best algorithms are those with a small n-gram order and that requires less time to execute. This is probably due to the fact that most of the concepts have a length that is less or equal than 2 tokens and that applying an n-gram model with a high order on a dataset with a strong dominant tag as O is not useful. 
+The graph in Fig. 3 shows the results of the base algorithm with all the different probability distributions and with and n-gram length going from 2 to 5. First some comments about the F1-score: the better tuples $(probability\ distribution, n-gram\ order)$ are the $(witten\_bell,2)$ and $(absolute,2)$. They reached an maximum F1-score of 76.37 in our test. Notice that all different combinations, apart from some particular cases, performs very similar and the variance of the results is very low. The average F1-score is of 74.25 points. In this tests, the best algorithms are those with a small n-gram order and that requires less time to execute. This is probably due to the fact that most of the concepts have a length that is less or equal than 2 tokens and that applying an n-gram model with a high order on a dataset with a strong dominant tag as O is not useful.
 The time grows pretty linearly on the size of the order of the n-gram model, with all the test performed on the same machine with the same system load. The time is expressed in seconds and as you can see, our machine is able to process the test dataset in few minutes in all cases (the test dataset contains about a thousand sentences). The conclusions about this first test are that it's completely useless to use n-gram orders greater than 2 without applying the improvements we wrote about.
 
 \subsection{Improved Algorithm}
@@ -135,28 +135,28 @@ The time grows pretty linearly on the size of the order of the n-gram model, wit
 \end{figure*}
 
 The results of the improved model, reported in Figure 4, shows an average increase of the F1-score by 6.29 points, but there are combinations, like the $(unsmoothed,2)$, that do not really perform better, with a difference in the F1-score of only 0.6. On the other side, the presmoothed distribution with a n-gram order of 5, earn more than 14 points w.r.t. the base case. In this test, the standard deviation of the F1-score results w.r.t. the base case is even lower, having all scores between 76.81 and 82.43. We will now analyse some interesting cases. First of all take a look at the time: the $witten\_bell$ distribution with an n-gram order between 2 and 3 is about the 30\% faster than all the other probability distributions. This should be taken into account in eventual large scale application, where the efficiency is a focal point. If you are more interested in maximising only the F1-score performances, probably you will note that the kneser\_ney distribution with an n-gram order of 4 has the higher F1-score of 82.43. Is it worth to use the kneser\_ney distribution only for this very small improvement of the performances with respect to the others? This should be decided by the reader.
-Finally, some considerations about the time needed after having applied the improvement to the basic case. The language model built on a dataset with all the 'O's replaced by tokens is really bigger than the previous, and our tests confirmed the assumptions showing an increment of the number of edges of 17 times. This leads to test timings that are more than 2 times longer w.r.t. the basic case, especially with n-gram orders greater than 3. 
+Finally, some considerations about the time needed after having applied the improvement to the basic case. The language model built on a dataset with all the 'O's replaced by tokens is really bigger than the previous, and our tests confirmed the assumptions showing an increment of the number of edges of 17 times. This leads to test timings that are more than 2 times longer w.r.t. the basic case, especially with n-gram orders greater than 3.
 
 \section{Error Analysis}
 
 There are few different type of errors, each of them more or less frequent as the others:
 \begin{itemize}
 \item The concept is completely missed by our algorithm.
-\item A concept is found but it do not really exists. 
+\item A concept is found but it do not really exists.
 \item A concept is matched partially or it's longer than the original.
 \item The type of the concept is wrong, but B and I tags were right.
 \end{itemize}
 
 Each of this error appears many times, they are not rare cases. One of the most interesting type of error is the one that starts with an I tag even if, by definition, concept must start with a B tag. With respect to the other errors, this can be easily avoided by adding some constraints on the solutions proposed by the algorithm. Given the shortest path found, check if the solution contains concepts that starts with an I tag and, if present, remove that path by applying the difference between the FST and a new linear FST containing only the solution that has to be avoided.
-The other errors are more difficult to be corrected because they are the consequences of the design of our algorithm and of the small size of the training set. There are words in the test sentences that were never seen during the training phase and were treated as unknown symbols. 
+The other errors are more difficult to be corrected because they are the consequences of the design of our algorithm and of the small size of the training set. There are words in the test sentences that were never seen during the training phase and were treated as unknown symbols.
 
 \section{Conclusions}
 
-The algorithm presented in this paper has some particular advantages that has to be taken into account in eventual comparison: it is easy to be implemented and based on completely open source libraries, it's fast and does not need a particular computing power. The accuracy and the F1-score are satisfying but not the state of the art. In particular, given the presence of a dominant tag, the F1-score is a better measure for the evaluation of the performances of the system, being about 82 percentage points while the accuracy is around 93\%. 
+The algorithm presented in this paper has some particular advantages that has to be taken into account in eventual comparison: it is easy to be implemented and based on completely open source libraries, it's fast and does not need a particular computing power. The accuracy and the F1-score are satisfying but not the state of the art. In particular, given the presence of a dominant tag, the F1-score is a better measure for the evaluation of the performances of the system, being about 82 percentage points while the accuracy is around 93\%.
 
-An complete example of the code is available here: \url[fontsize=10]{https://github.com/Luca1995it/LUS-project}
+An complete example of the code is available here: \url{https://github.com/Luca1995it/LUS-project}
 
-\bigskip 
+\bigskip
 
 
 \begin{thebibliography}{2}
@@ -164,7 +164,7 @@ An complete example of the code is available here: \url[fontsize=10]{https://git
 \bibitem{openfst}
 OpenFST - Open-source library for constructing, combining, optimizing, and searching weighted finite-state transducers (FSTs). \\
 \url{http://www.openfst.org/twiki/bin/view/FST/WebHome}
- 
+
 \bibitem{opengrm}
 OpenGRM - Collection of open-source libraries for constructing, combining, applying and searching formal grammars.
 \url{http://www.opengrm.org/twiki/bin/view/GRM/WebHome}
