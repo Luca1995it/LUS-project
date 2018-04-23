@@ -7,7 +7,7 @@ The improvements folder contains code example for the second algorithm described
 
 ## How to use
 ## Launch a single test
-./auto.sh <distribution> <n-gram-order> <output_file>
+./auto.sh <distribution> sdfs <n-gram-order> <output_file>
 
 Example ./auto.sh witten_bell 3 res.txt
 
